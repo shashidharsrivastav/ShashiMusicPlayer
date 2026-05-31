@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Music Player</title>
+    <link rel="icon" href="data:,">
+<!--    <link rel="stylesheet" href="../static/css/style.css">-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="player">
+    <h1>Reder Playing</h1>
+    <div class="search-box-wrapper">
+        <input type="text" id="search" placeholder="Search for a song...">
+    </div>
+
+    <div class="player-Container">
+        <hr>
+        <h3>All Songs</h3>
+        <ul id="songList"></ul>
+    </div>
+
+    <div class="controls">
+        <div class="playback-row">
+            <button id="shuffleBtn" class="mode-btn">Shuffle: OFF</button>
+            <button id="previous" class="control-btn" title="Previous">&laquo; Prev</button>
+
+            <div class="audio-wrapper">
+                <audio id="audio" controls></audio>
+            </div>
+
+            <button id="stop" class="control-btn accent-btn" title="Stop">Stop</button>
+            <button id="next" class="control-btn" title="Next">Next &raquo;</button>
+            <button id="repeatBtn" class="mode-btn">Repeat: OFF</button>
+        </div>
+    </div>
+</div>
+    <script type="module" src="/js/script.js"></script>
+</body>
+</html>
